@@ -1,0 +1,17 @@
+@import "src/assets/styles/mixins";
+
+.strict_section {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-bottom: calc(3 * var(--spacing-wa-xl));
+
+  @include useMobile {
+    flex-direction: column-reverse;
+
+    .copyright {
+      text-align: center;
+      margin-top: var(--spacing-wa-xl);
+    }
+  }
+}

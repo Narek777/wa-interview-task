@@ -1,0 +1,17 @@
+.divider {
+  width: 100%;
+  height: 10px;
+  border-bottom: 1px solid var(--color-wa-brand);
+
+  &--dashed {
+    border-bottom: 1px dashed var(--color-wa-brand);
+  }
+
+  &--secondary-color {
+    border-bottom: 1px solid var(--color-wa-ancient);
+  }
+
+  &--margin {
+    margin: 50px 0;
+  }
+}

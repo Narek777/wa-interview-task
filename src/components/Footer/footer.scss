@@ -1,0 +1,38 @@
+@import 'src/assets/styles/mixins';
+
+.footer_wrapper {
+  width: 100%;
+  background-color: var(--color-wa-brand);
+  padding-top: 50px;
+
+  .footer_sections_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+    .footer_section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .footer_section_items {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .footer_section_title {
+        font-weight: bold;
+      }
+    }
+  }
+
+  @include useMobile {
+    .footer_sections_container {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--spacing-wa-xl)
+    }
+  }
+}

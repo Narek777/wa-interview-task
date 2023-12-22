@@ -1,0 +1,22 @@
+@import 'src/assets/styles/mixins';
+
+.payments_section {
+  margin: auto;
+  width: 60%;
+
+  .payment_logos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: calc(5 * var(--spacing-wa-s));
+
+    > img {
+      width: 100px;
+      height: 50px;
+    }
+  }
+
+  @include useMobile {
+    width: 100%;
+  }
+}

@@ -1,0 +1,51 @@
+@import "src/assets/styles/mixins";
+
+.header_wrapper {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: var(--color-wa-brand);
+
+  .header_content {
+    .header_logo {
+      width: 120px;
+      height: 26px;
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 36px;
+      transform: translateY(-50%);
+
+      img {
+        object-fit: contain;
+      }
+    }
+
+    .navbar_toggle_button {
+      cursor: pointer;
+      position: absolute;
+      right: 36px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  @include useLaptop {
+    .header_content {
+      .header_logo {
+        width: 120px;
+        height: 26px;
+      }
+    }
+  }
+
+  @include useMobileAndTablet {
+    .header_content {
+      .header_logo {
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

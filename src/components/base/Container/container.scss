@@ -1,0 +1,15 @@
+@import "src/assets/styles/mixins";
+
+.container {
+  --contentMaxWidth: 1024px;
+  --paddingSingle: var(--spacing-wa-xxl);
+  max-width: calc(var(--contentMaxWidth) + 2 * var(--paddingSingle));
+  padding-left: var(--paddingSingle);
+  padding-right: var(--paddingSingle);
+  width: 100%;
+  margin: auto;
+
+  @include useMobile {
+    --paddingSingle: calc(3 * var(--spacing-wa-l));
+  }
+}

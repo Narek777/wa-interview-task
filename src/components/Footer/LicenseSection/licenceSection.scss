@@ -1,0 +1,22 @@
+@import "src/assets/styles/mixins";
+
+.licence_section {
+  margin: auto;
+  display: flex;
+  gap: var(--radius-wa-xxl);
+  align-items: center;
+
+  .licence_section_text {
+    color: #fff;
+    font-size: 14px;
+  }
+
+  @include useMobile {
+    justify-content: center;
+    flex-direction: column-reverse;
+
+    .licence_section_logo {
+      margin-bottom: var(--spacing-wa-xl);
+    }
+  }
+}
