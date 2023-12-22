@@ -1,4 +1,4 @@
-@import "src/assets/styles/mixins";
+@import 'src/assets/styles/mixins';
 
 .header_wrapper {
   height: 90px;
@@ -6,6 +6,10 @@
   align-items: center;
   position: relative;
   background-color: var(--color-wa-brand);
+
+  @include useMobile {
+    height: 60px;
+  }
 
   .header_content {
     .header_logo {
